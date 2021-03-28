@@ -12,15 +12,21 @@
   margin-left: 1em;
 }
 .menuLinks a {
+  transition: color 0.2s ease;
+  color: black;
   margin-left: 7.2em;
   font-family: "Titillium Web", sans-serif;
   display: block;
   width: fit-content;
 }
+.menuLinks a:hover {
+  color: #5f37ff;
+}
 
 .icon {
   margin-left: 2.25em;
   padding: 0.75em 0.5em;
+  cursor: pointer;
 }
 
 .title {
@@ -49,5 +55,9 @@
   }
   .menuLinks{
     display: none;
+  }
+  .title {
+    font-size: 2.60em;
+    margin-top: 5em;
   }
 }
