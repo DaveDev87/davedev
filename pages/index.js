@@ -1,5 +1,6 @@
 import Head from "next/head";
-import st from "../styles/Home.module.css";
+import Menu from "../components/Menu";
+import st from "../styles/Home.module.scss";
 
 export default function Home() {
   const {
@@ -19,6 +20,7 @@ export default function Home() {
         <title>DaveDev87</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <Menu /> */}
       <main className={container}>
         <section className={menu}>
           <div className={menuHeader}>

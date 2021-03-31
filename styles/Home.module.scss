@@ -1,3 +1,8 @@
+@import "mixins";
+
+$color-primary-links: #5f37ff;
+$color-primary-titles: #8975db;
+
 .menu {
   margin-top: 1.5em;
 }
@@ -11,18 +16,19 @@
   margin: auto 0;
   margin-left: 1em;
 }
-.menuLinks a {
-  transition: color 0.2s ease;
-  color: black;
-  margin-left: 7.2em;
-  font-family: "Titillium Web", sans-serif;
-  display: block;
-  width: fit-content;
+.menuLinks {
+  a {
+    transition: color 0.2s ease;
+    color: black;
+    margin-left: 7.2em;
+    font-family: "Titillium Web", sans-serif;
+    display: block;
+    width: fit-content;
+  }
+  a:hover {
+    color: $color-primary-links;
+  }
 }
-.menuLinks a:hover {
-  color: #5f37ff;
-}
-
 .icon {
   margin-left: 2.25em;
   padding: 0.75em 0.5em;
@@ -44,20 +50,18 @@
   color: #818181;
 }
 .softdev {
-  color: #8975db;
+  color: $color-primary-titles;
 }
 
-/* @media only screen and (min-width: 480px) {
-} */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@include desktop() {
   .menuTitle {
     display: none;
   }
-  .menuLinks{
+  .menuLinks {
     display: none;
   }
   .title {
-    font-size: 2.60em;
+    font-size: 2.6em;
     margin-top: 5em;
   }
 }
