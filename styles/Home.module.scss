@@ -24,9 +24,10 @@ $color-primary-titles: #8975db;
     font-family: "Titillium Web", sans-serif;
     display: block;
     width: fit-content;
-  }
-  a:hover {
-    color: $color-primary-links;
+
+    &:hover {
+      color: $color-primary-links;
+    }
   }
 }
 .icon {
