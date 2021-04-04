@@ -1,8 +1,11 @@
+@use "base";
 @import "mixins";
 
-$color-primary-links: #5f37ff;
-$color-primary-titles: #8975db;
 
+.container {
+  background-color: base.$background-color;
+  height: 100%;
+}
 .menu {
   margin-top: 1.5em;
 }
@@ -19,14 +22,14 @@ $color-primary-titles: #8975db;
 .menuLinks {
   a {
     transition: color 0.2s ease;
-    color: black;
+    color: base.$primary-color-dark;
     margin-left: 7.2em;
     font-family: "Titillium Web", sans-serif;
     display: block;
     width: fit-content;
 
     &:hover {
-      color: $color-primary-links;
+      color: base.$links-color;
     }
   }
 }
@@ -48,10 +51,10 @@ $color-primary-titles: #8975db;
 }
 
 .davedev {
-  color: #818181;
+  color: base.$primary-color-dark;
 }
 .softdev {
-  color: $color-primary-titles;
+  color: base.$primary-color;
 }
 
 @include desktop() {

@@ -14,12 +14,12 @@ export default function Home() {
     softdev,
   } = st;
   return (
-    <div>
+    <div className={container}>
       <Head>
         <title>DaveDev87</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={container}>
+      <main>
         <section className={menu}>
           <div className={menuHeader}>
             <div className={icon}>
